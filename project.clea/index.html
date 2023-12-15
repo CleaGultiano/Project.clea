@@ -1,0 +1,136 @@
+  <!DOCTYPE html>
+<html lang="en">
+    <head>
+    </title>Welcome to my Website-Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div id="header">
+                <div class="container">   
+                    <nav>
+                        <img src="image/logo.jpg" class="logo">
+                        <ul>
+                            <li><a href="#"> Home </a></li>
+                            <li><a href="#"> About </a></li>
+                            <li><a href="#"> Project </a></li>
+                            <li><a href="#"> Contact </a></li>   
+                        </ul>
+                    </nav>
+                    <div class="header-text">
+                        <p>UI/UX DESIGN</p>
+                         <h1>Hi, I'm <span>Clea Gultiano</span><br>From Philippines</h1>
+                        </div>
+                    </div>
+                </div>     
+            <!---------------------about-------------->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                                <img src="image/meme.jpg">
+                            </div>
+                            <div class="about-col-2">
+                                <h1 class="sub-title"> About Me</h1>
+           <p>I'm also a big fan of open source software and contrib a person who is passionate about life and all it has to offer.
+            They are always eager to learn new things and explore new places. In my free time, I enjoy watching k-drama and listening music, which helps them relax and unwind. They are also a [profession], where they use their skills to make a positive impact on the world. 
+           I'm friendly and outgoing personality, I always ready to lend a helping hand to those in need. </p>
+           <div class="tab-titles">
+            <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-link"  onclick="opentab('interest')">Interest</p>
+            <p class="tab-link"  onclick="opentab('educational')">Educational</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Encoder</span><br>Coding</li>
+                <li><span>Design</span><br>Designing</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="interest">
+            <ul>
+                <li><span>Cook</span><br>Cooking</li>
+                <li><span>Book</span><br>Reading</li>
+                <li><span>K-drama</span><br>Watching</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="educational">
+            <ul>
+                <li><span>2023</span><br>Design Manager at Idea factory</li>
+                <li><span>2025</span><br>Design Training at BCB Institute</li>
+            </ul>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------project---------->
+<div id="Projects">
+    <div class="conatiner">
+        <h1 class="sub-title"> My Projects</h1>
+        <div class="projects-list">
+            
+            <div>
+                <h2>Encoder</h2>
+                <p>In machinery,an encoder is a sensing device
+                   that provides feedback on motion,posotion, 
+                   count, speed, or direction
+                </p>
+                <a href="#">Learn more</a>
+                </p>
+            </div>
+            <div>
+                <h2>Design</h2>
+                <p>Design is a crucial aspect of any product orservice,
+                    as it can influence the user's perception of the 
+                    product and its functionality.
+                </p>
+                <a href="#">Learn more</a>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!------------contact------------>
+<div id="contact">
+<div class="conatiner">
+    <div class="row">
+       <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>Contact.com</p>
+        <p><i class="fas fa-phone-square-alt"></i>09701574870</p>
+        <div class="social-icons">
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-Instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href=""  class="btn btn2">Ddownload CV</a>
+       </div>
+       <div class="contact-right"></div>
+       <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email required">
+        <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+       </form>
+    </div>
+</div>
+
+</div>
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+for (tablinks of tablinks){
+tablink.classList.remove("active-link");
+}
+for (tabcontents of tabcontents){
+tabcontents.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+</body>
+</html>
